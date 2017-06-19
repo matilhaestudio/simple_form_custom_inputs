@@ -69,14 +69,20 @@ var initDropFile = function() {
 var loaded = false;
 
 var ready = function() {
-  if(!loaded) {
-    initSwitchery();
-    initMasks();
-    initDatepicker();
-    handleAttachementLabel();
-    initDropFile();
-    loaded = true;
-  }
+  // if(!loaded) {
+  //   initSwitchery();
+  //   initMasks();
+  //   initDatepicker();
+  //   handleAttachementLabel();
+  //   initDropFile();
+  //   loaded = true;
+  // }
+
+  initSwitchery();
+  initMasks();
+  initDatepicker();
+  handleAttachementLabel();
+  initDropFile();
 };
 
 $(document).on("turbolinks:load", ready);
